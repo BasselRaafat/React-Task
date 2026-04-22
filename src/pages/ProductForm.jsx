@@ -15,16 +15,15 @@ export default function ProductForm(props) {
 		price: "",
 		categoryId: "1",
 	});
+
 	useEffect(() => {
 		if (MODE === "Edit") {
-			console.log(MODE);
-			const itemToUpdate = items.find((it) => param.id === it.id);
-			console.log(itemToUpdate);
-			console.log(items);
-			console.log(param.id);
-			if (itemToUpdate) setForm(itemToUpdate);
+			const item = items.find((it) => param.id === it.id);
+			if (item) setForm(item);
 		}
-	}, [items]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [param.id, items]);
+
 	const addNewItem = async (item) => {
 		const { data } = await axios.post(`${baseUrl}/products/`, item);
 		addNewItemHandler(data);
