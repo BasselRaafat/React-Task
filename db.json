@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "name": "Large Chees Cake",
+      "price": 661,
+      "categoryId": 2,
+      "isInCart": true,
+      "count": 5,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Large White Cake",
+      "count": 0,
+      "price": 32,
+      "categoryId": 3,
+      "isInCart": false
+    },
+    {
+      "id": "3",
+      "name": "Large Pizza",
+      "count": 0,
+      "price": 65,
+      "categoryId": 1,
+      "isInCart": false
+    },
+    {
+      "name": "Large Cinappon",
+      "price": 65,
+      "categoryId": 4,
+      "isInCart": false,
+      "count": 0,
+      "id": "4"
+    },
+    {
+      "id": "688d",
+      "name": "Medium Chees Cake",
+      "price": 12,
+      "categoryId": 2,
+      "isInCart": false,
+      "count": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Pizze",
+      "isSelected": false
+    },
+    {
+      "id": "2",
+      "name": "Chees Cake",
+      "isSelected": false
+    },
+    {
+      "id": "3",
+      "name": "White Cake",
+      "isSelected": false
+    },
+    {
+      "id": "4",
+      "name": "Cinappon",
+      "isSelected": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
